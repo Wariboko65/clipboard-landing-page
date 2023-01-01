@@ -9,7 +9,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Clipboard-Landing-Page](frontendmentor.io/solutions/clipboard-landing-page-ZCbMAz8TfL)
+- Solution URL: [Clipboard-Landing-Page](https://frontendmentor.io/solutions/clipboard-landing-page-ZCbMAz8TfL)
 - Live Site URL: [Clipboard-Landing-Page](https://clipboard-landing-page-zeta-six.vercel.app/)
 
 ## My process
