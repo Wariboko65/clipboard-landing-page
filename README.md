@@ -23,6 +23,6 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ## Author
 
-- Website - [John Godwin Oamien](godwins-portfolio.vercel.app)
+- Website - [John Godwin Oamien](https://godwins-portfolio.vercel.app)
 - Frontend Mentor - [@Wariboko65](https://www.frontendmentor.io/profile/Wariboko65)
-- Twitter - [@Gdwin656](https://www.twitter.com/Gdwin656)*
+- Twitter - [@Gdwin656](https://www.twitter.com/Gdwin656)
