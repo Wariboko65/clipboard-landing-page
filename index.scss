@@ -1,0 +1,296 @@
+$scyan: hsl(171, 66%, 44%);
+$scyan2: hsla(171, 66%, 44%, 0.596);
+$scyan3: hsl(171, 67%, 29%);
+$lblue: hsl(233, 100%, 69%);
+$lblue2: hsla(233, 100%, 69%, 0.562);
+$lblue3: hsl(233, 45%, 47%);
+$dgblue: hsl(210, 10%, 33%);
+$gblue: hsl(201, 11%, 66%);
+$gblue2: hsla(202, 11%, 66%, 0.493);
+$white: hsl(0, 0%, 100%);
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree", Arial, Helvetica, sans-serif;
+    background-image: url("images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 50vh;
+    text-align: center;
+
+    main {
+        section {
+            .top {
+                margin-block-start: 100px;
+                margin-block-end: 30px;
+            }
+            h2 {
+                color: $dgblue;
+                margin-inline: 80px;
+                font-weight: 600;
+            }
+            p {
+                color: $gblue;
+                margin-inline: 70px;
+            }
+            .row {
+                @include flex(column);
+                gap: 20px;
+                .btn {
+                    text-decoration: none;
+                    color: $white;
+                    margin-inline: 50px;
+                    padding: 15px 20px;
+                    border-radius: 40px;
+                }
+                .btn1 {
+                    background-color: $scyan;
+                    margin-block-start: 30px;
+                    box-shadow: 0 3px 10px 0 $scyan2, 0 -3px 2px 0 $scyan3 inset;
+                }
+                .btn2 {
+                    background-color: $lblue;
+                    box-shadow:  0 3px 10px 0 $lblue2, 0 -3px 2px 0 $lblue3 inset;
+                    margin-block-end: 140px;
+                }
+
+                .computer {
+                    margin-block-start: 50px;
+                    width: 90%;
+                    height: auto;
+                    margin-inline: auto;
+                    margin-block-end: 20px;
+                }
+                .row-content {
+                    p {
+                        margin-block-end: 50px;
+                    }
+                }
+                .section {
+                    margin-block-start: 50px;
+                }
+                .section3 {
+                    margin-block-end: 60px;
+                }
+            }
+            & h2:nth-child(8) {
+                margin-block-start: 140px;
+            }
+            & p:nth-child(9) {
+                margin-block-end: 60px;
+            }
+            .devices{
+                width: 90%;
+                height: auto;
+                margin-inline: auto;
+                margin-block-end: 70px;
+            }
+            .row3 {
+                img {
+                    width: 30%;
+                    height: auto;
+                    margin-inline: auto;
+                    margin-block-start: 50px;
+                    &:last-child {
+                        margin-block-end: 140px;
+                    }
+                }
+            }
+            .attribution { 
+                font-size: 15px; 
+                text-align: center; 
+                a {
+                    color: hsl(228, 45%, 44%);
+                }
+            }
+        }
+        footer {
+            background-color: $gblue2;
+            padding-block: 30px;
+            .row4 {
+                .bottom {
+                    width: 60px;
+                    height: auto;
+                    margin-block: 20px;
+                }
+                .sec {
+                    p {
+                        color: $dgblue;
+                        margin-block-end: 20px;
+                    }
+                }
+                .sec1 {
+                    margin-block-start: 20px;
+                }
+                .sec1, .sec2, .sec3 {
+                    a {
+                        display: block;
+                        margin-block-end: 20px;
+                        color: $dgblue;
+                        text-decoration: none; 
+                    }
+                }
+                .sec3 {
+                    margin-block-end: 40px;
+                }
+                .sec4 {
+                    @include flex(row);
+                    justify-content: center;
+                    gap: 30px;
+                    a {
+                        display: block;
+                        svg {
+                            fill: $dgblue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-image: url("images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        background-size: 100vw 50vh;
+        main {
+            section {
+                p {
+                    margin-inline: 390px;
+                }
+                .row-btn {
+                    @include flex(row);
+                    width: 40%;
+                    margin-inline: auto;
+                    margin-block-end: 120px;
+                    margin-block-start: 40px;
+                    .btn1 {
+                        flex: 50%;
+                    }
+                    .btn2 {
+                        flex: 50%;
+                    }
+                    .btn {
+                        margin: 0;
+                        transition: opacity 0.5s;
+                        &:hover {
+                            opacity: 0.7
+                        }
+                    }
+                }
+                .row1 {
+                    @include flex(row);
+                    width: 90%;
+                    align-items: center;
+                    margin-inline: auto;
+                    margin-block-end: -80px;
+                    .computer {
+                        height: auto;
+                        width: 50%;
+                        margin-inline-start: 80px;
+                    }
+                    .row-content {
+                        width: 50%;
+                        margin-inline-start: 80px;
+                        p {
+                            margin: 0 140px 0 0;
+                            text-align: left;
+                        }
+                        h2 {
+                            text-align: left;
+                            margin-inline-start: 0;
+                        }
+                    }
+                }
+                .devices {
+                    width: 60%;
+                    height: auto;
+                }
+                .row2 {
+                    @include flex(row);
+                    width: 90%;
+                    margin-inline: auto;
+                    margin-block-start: 50px;
+                    justify-content: center;
+                    .section {
+                        width: 30%;
+                        p {
+                            margin: 20px;
+                        }
+                        h2 {
+                            margin: 20px;
+                        }
+                    }
+                }
+                .row3 {
+                    @include flex(row);
+                    width: 90%;
+                    margin-inline: auto;
+                    align-items: center;
+                    height: 150px;
+                    margin-block-end: 100px;
+                    img {
+                        object-fit: contain;
+                        transform: scale(0.7);
+                        &:last-child {
+                            margin-block-start: 180px;
+                        }
+                    }
+                }
+            }
+            footer {
+                .row4 {
+                    @include flex(row);
+                    justify-content: space-around;
+                    text-align: left;
+                    .bottom {
+                        margin-block-start: 5px;
+                    }
+                    .sec1 {
+                        margin-block-start: 2px;
+                    }
+                    .sec1, .sec2, .sec3 {
+                        @include flex(column);
+                        margin-inline-start: -100px;
+                        gap: 10px;
+                        a {
+                            text-decoration: none;
+                            color: $dgblue;
+                            transition: color 0.5s;
+                            &:hover {
+                                color: $scyan;
+                            }
+                        }
+                    }
+                    .sec4 {
+                        margin-block-start: 25px;
+                        margin-inline-start: 100px;
+                        @include flex(row);
+                        gap: 30px;
+                        a {
+                            display: block;
+                            svg {
+                                fill: $dgblue;
+                                transition: fill 0.5s;
+                                &:hover {
+                                    fill: $scyan;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
