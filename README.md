@@ -6,12 +6,11 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 ### Screenshot
 
 ![](images/desktop-view.png)
-![](images/mobile-view.png.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/clipboard-landing-page-ZCbMAz8TfL]
+- Live Site URL: [https://clipboard-landing-page-zeta-six.vercel.app/]
 
 ## My process
 
@@ -24,6 +23,6 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ## Author
 
-- Website - [John Godwin Oamien](godwins-portfolio.vercel.app)
-- Frontend Mentor - [@Wariboko65](https://www.frontendmentor.io/profile/Wariboko65)
-- Twitter - [@Gdwin656](https://www.twitter.com/Gdwin656)*
+- Website - [godwins-portfolio.vercel.app]
+- Frontend Mentor - [godwins-portfolio.vercel.app]
+- Twitter - [@Gdwin656]
